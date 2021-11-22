@@ -1,7 +1,5 @@
 {
-  "name": "cucumber-ts-starter",
-  "version": "1.1.0",
-  "description": "Starter project to write and debug cucumber-js features in TypeScript language",
+  "name": "mob-workshop-ts",
   "main": "index.js",
   "scripts": {
     "build": "rimraf build && npm run format && npm run lint && tsc && npm run cucumber-check",
@@ -20,16 +18,6 @@
   "engines": {
     "node": ">=14"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hdorgeval/cucumber7-ts-starter.git"
-  },
-  "author": "Henri d'Orgeval",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hdorgeval/cucumber7-ts-starter/issues"
-  },
-  "homepage": "https://github.com/hdorgeval/cucumber7-ts-starter#readme",
   "dependencies": {
     "@cucumber/cucumber": "7.0.0",
     "@cucumber/html-formatter": "11.0.4",

@@ -1,4 +1,4 @@
-import { SimpleMathsCalculator } from '../domains/simple-maths/simple-maths-calculator';
+import { SimpleMathsCalculator } from '../src/simple-maths/simple-maths-calculator';
 import { setWorldConstructor } from '@cucumber/cucumber';
 import { Stream } from 'stream';
 

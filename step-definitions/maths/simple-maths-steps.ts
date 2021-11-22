@@ -1,5 +1,5 @@
 import { CustomWorld } from '../../world';
-import { SimpleMathsCalculator } from '../../domains/simple-maths/simple-maths-calculator';
+import { SimpleMathsCalculator } from '../../src/simple-maths/simple-maths-calculator';
 import { Before, Given, Then, When } from '@cucumber/cucumber';
 import expect from 'expect';
 
