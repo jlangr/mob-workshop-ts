@@ -7,13 +7,13 @@
     "cucumber": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js features/**/*.feature --require env/set-environment-variables.ts --require world/custom-world.ts --require step-definitions/**/*.ts --require hooks/**/*.ts  --require-module ts-node/register --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\"  --format html:reports/report.html --format summary --format @cucumber/pretty-formatter --format cucumber-console-formatter --publish-quiet",
     "eslint-fix": "eslint ./ --ext .js,.ts,.tsx --fix",
     "eslint-init": "eslint --init",
-    "format": "prettier --write \"**/*.{ts,tsx,css,html}\" ",
     "lint": "eslint ./ --ext .js,.ts,.tsx --format visualstudio --no-color --max-warnings 10 --report-unused-disable-directives",
     "only": "npm run cucumber -- --tags @only",
     "report": "open reports/report.html",
     "snippets": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js features/**/*.feature --dry-run --require env/set-environment-variables.ts --require world/custom-world.ts --require step-definitions/**/*.ts --require hooks/**/*.ts  --require-module ts-node/register --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\" --format snippets  --publish-quiet",
     "steps-usage": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js features/**/*.feature --dry-run --require env/set-environment-variables.ts --require world/custom-world.ts --require step-definitions/**/*.ts --require hooks/**/*.ts  --require-module ts-node/register --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\" --format usage  --publish-quiet",
-    "test": "npm run cucumber"
+    "cukes": "npm run cucumber",
+    "test": "NODE_ENV=test mocha test/**/*.spec.{tsx,ts} -r compiler.ts"
   },
   "engines": {
     "node": ">=14"
@@ -22,9 +22,12 @@
     "@cucumber/cucumber": "7.0.0",
     "@cucumber/html-formatter": "11.0.4",
     "@cucumber/pretty-formatter": "1.0.0-alpha.0",
+    "@types/chai": "^4.2.22",
     "@types/expect": "24.3.0",
     "@types/lodash": "4.14.167",
+    "@types/mocha": "^9.0.0",
     "@types/node": "14.14.20",
+    "chai": "^4.3.4",
     "cucumber-console-formatter": "1.0.0",
     "expect": "26.6.2",
     "is-ci": "2.0.0",
@@ -35,9 +38,6 @@
     "@typescript-eslint/eslint-plugin": "4.12.0",
     "@typescript-eslint/parser": "4.12.0",
     "eslint": "7.17.0",
-    "eslint-config-prettier": "7.1.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-prettier": "3.3.1",
-    "prettier": "2.2.1"
+    "eslint-plugin-import": "2.25.3"
   }
 }

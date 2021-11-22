@@ -1,21 +1,21 @@
 export class SimpleMathsCalculator implements Calculator {
-  private currentValue = 0;
+  private currentValue = 0
 
   public startWith(value: number): Calculator {
-    this.currentValue = value;
-    return this;
+    this.currentValue = value
+    return this
   }
   public incrementBy(value: number): Calculator {
-    this.currentValue += value;
-    return this;
+    this.currentValue += value
+    return this
   }
   public get result(): number {
-    return this.currentValue;
+    return this.currentValue
   }
 }
 
 export interface Calculator {
-  startWith: (value: number) => Calculator;
-  result: number;
-  incrementBy: (value: number) => Calculator;
+  startWith: (_value: number) => Calculator
+  result: number
+  incrementBy: (_value: number) => Calculator
 }
