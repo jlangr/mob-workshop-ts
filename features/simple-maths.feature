@@ -13,7 +13,6 @@ Feature: Simple maths
     When I increment this variable by 1
     Then the variable should contain 12
 
-  @ignore
   Scenario Outline: much more complex stuff
     Given a variable is set to <var>
     When I increment this variable by <increment>
