@@ -1,17 +1,21 @@
-# cucumber7-ts-starter
-
-[![Build Status](https://travis-ci.org/hdorgeval/cucumber7-ts-starter.svg?branch=main)](https://travis-ci.org/hdorgeval/cucumber7-ts-starter)
-[![Build status](https://ci.appveyor.com/api/projects/status/v7ing1c5m9fr0fjf?svg=true)](https://ci.appveyor.com/project/hdorgeval/cucumber7-ts-starter)
-
-Starter project to write and debug cucumber-js v7 features in TypeScript language
-
 ## After cloning the repo
 
-- run the command `npm install`.
+- install the mocha test runner:
 
-## To execute the tests locally
+  `npm install -g mocha`
 
-- run the command `npm test`.
+- run the command `npm install`
+
+- run the command `npm run test`
+  You should see 9 passing unit tests
+
+- run the command `npm run cukes`
+  You should see some calculator scenarios execute successfully--look for "4 scenarios, 4 passed."
+
+If you've gotten this far, you're good!
+
+====
+
 
 ## To choose a reporter
 
@@ -87,3 +91,11 @@ When running on a CI, you should setup your jobs with the expected environment v
 ## To use a custom World Objet
 
 - cutomize the given Custom World Object : [custom-world](world/custom-world.ts)
+
+# cucumber7-ts-starter
+
+[![Build Status](https://travis-ci.org/hdorgeval/cucumber7-ts-starter.svg?branch=main)](https://travis-ci.org/hdorgeval/cucumber7-ts-starter)
+[![Build status](https://ci.appveyor.com/api/projects/status/v7ing1c5m9fr0fjf?svg=true)](https://ci.appveyor.com/project/hdorgeval/cucumber7-ts-starter)
+
+Starter project to write and debug cucumber-js v7 features in TypeScript language
+

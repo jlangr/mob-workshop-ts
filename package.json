@@ -13,7 +13,7 @@
     "snippets": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js features/**/*.feature --dry-run --require env/set-environment-variables.ts --require world/custom-world.ts --require step-definitions/**/*.ts --require hooks/**/*.ts  --require-module ts-node/register --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\" --format snippets  --publish-quiet",
     "steps-usage": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js features/**/*.feature --dry-run --require env/set-environment-variables.ts --require world/custom-world.ts --require step-definitions/**/*.ts --require hooks/**/*.ts  --require-module ts-node/register --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\" --format usage  --publish-quiet",
     "cukes": "npm run cucumber",
-    "test": "NODE_ENV=test mocha test/**/*.spec.{tsx,ts} -r compiler.ts"
+    "test": "NODE_ENV=test mocha test/**/*.spec.ts -r compiler.ts"
   },
   "engines": {
     "node": ">=14"
