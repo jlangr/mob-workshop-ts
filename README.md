@@ -90,7 +90,7 @@ When running on a CI, you should setup your jobs with the expected environment v
 
 ## To use a custom World Object
 
-- cutomize the given Custom World Object : [custom-world](world/custom-world.ts)
+- customize the given Custom World Object : [custom-world](world/custom-world.ts)
 
 # cucumber7-ts-starter
 
