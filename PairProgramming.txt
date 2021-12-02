@@ -1,0 +1,11 @@
+Why is pair programming valuable?
+
+- More people know what's happening
+
+- Different opinions which can help solve the problem
+
+- The MR proccess could be part of the pairing proccess
+
+- Learn by seeing and hearing others, and how they work and solve problems
+
+- Constant feedback coming, helps new team members get started
