@@ -1,0 +1,11 @@
+Advantages of Pair Programming
+
+* Brainstorming
+* Another pair of eyes on the code
+* Minimize lead time from dev to main branch
+* Different technical ideas
+* Solving bugs on the spot / preventing bugs
+* Learning coding structures / techniques
+* Learning IDE tricks
+* Refactoring for better quality
+* Learn git mob and other tools
