@@ -112,3 +112,6 @@ Rafael -- Software Developer - 3 years -- Did some research
 Dave -- Overhead - 33 years -- Singing 
 
 Michael -- Architect - 30 years -- Skiing!!
+
+Oscar -- Software Developer 2 years - like DYI projects
+
