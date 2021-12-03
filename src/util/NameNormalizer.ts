@@ -9,13 +9,17 @@ class NameNormalizer {
   normalize(name: string): string {
     name = name.trim()
     const nameParts = name.split(' ')
+
     if (nameParts.length == 2) {
       const reversed = nameParts.reverse()
       return reversed.join(', ')
     } else if (nameParts.length == 3){
-      
+      const lastName = nameParts[2]
+      const firstName = nameParts[0]
+      const middleInitial = nameParts[1][0]
+      return `${lastName}, ${firstName} ${middleInitial}.`
     }
-    return name;
+    return name
   }
 }
 
