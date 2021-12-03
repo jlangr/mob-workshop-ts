@@ -6,8 +6,11 @@ const numberOfCharactersInString = (s: string, char: string) => {
  */
 
 class NameNormalizer {
-  normalize(_: string): string {
-    return "??"
+  normalize(name: string): string {
+    name = name.trim()
+    const nameParts = name.split(' ')
+    const reversed = nameParts.reverse()
+    return reversed.join(', ')
   }
 }
 

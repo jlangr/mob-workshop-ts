@@ -11,19 +11,19 @@ describe('#NameNormalizer', () => {
     expect(normalizer.normalize('')).to.equal('')
   })
 
-  xit('returns single word name', () => {
+  it('returns single word name', () => {
     expect(normalizer.normalize('Plato')).to.equal('Plato')
   })
 
-  xit('swaps first and last names', () => {
+  it('swaps first and last names', () => {
     expect(normalizer.normalize('Haruki Murakami')).to.equal('Murakami, Haruki')
   })
 
-  xit('trims leading and trailing whitespace', () => {
+  it('trims leading and trailing whitespace', () => {
     expect(normalizer.normalize('  Big Boi   ')).to.equal('Boi, Big')
   })
 
-  xit('initializes middle name', () => {
+  it('initializes middle name', () => {
     expect(normalizer.normalize('Henry David Thoreau')).to.equal('Thoreau, Henry D.')
   })
 
