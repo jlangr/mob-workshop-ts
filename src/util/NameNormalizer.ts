@@ -16,7 +16,8 @@ class NameNormalizer {
     } else if (nameParts.length == 3){
       const lastName = nameParts[2]
       const firstName = nameParts[0]
-      const middleInitial = nameParts[1][0]
+      var middleInitial = nameParts[1][0]
+      middleInitial = nameParts[1].length == 0 ? middleInitial : `${middleInitial}.`
       return `${lastName}, ${firstName} ${middleInitial}.`
     }
     return name
